@@ -52,16 +52,19 @@
             <p>Envienos sus datos y nos pondremos en contacto con usted a la mayor brevedad posible.</p>
             <form action="mailto:lycasago@hotmail.com" method="post" enctype="text/plain">
                 <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+                    <!-- <label for="name">Nombre</label> -->
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
                 </div>
                 <div class="form-group">
-                    <label for="phone">Teléfono</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                    <!-- <label for="phone">Teléfono</label> -->
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                    <!-- <label for="email">Correo Electrónico</label> -->
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="texto" id="texto" cols="80" rows="10" placeholder="Escriba su consulta" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
