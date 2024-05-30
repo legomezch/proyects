@@ -13,7 +13,7 @@ body {
 }
 
 .nav-link {
-    color: #0051ff !important;
+    color: #0051ff; /* !important;*/
 }
 
 .navbar a:hover {
@@ -21,10 +21,23 @@ body {
     color: #e6f7ff;
 }
 
+.navbar-nav .nav-item .nav-link.active {
+    background-color: #007BFF; /* Color de fondo del enlace activo */
+    color: #FFF;             /* Color del texto del enlace activo */
+    border-radius: 5px;       /* Bordes redondeados */
+}
+
+/* Opcional: Puedes agregar estilos adicionales para efectos visuales */
+.navbar-nav .nav-item .nav-link.active:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+    color: #ffffff;
+}
+
 .lista {
     background-color: #8cf7e5;
     color: #2c40f1f5;
-    border: 2px solid #2c40f1f5;
+    border: 1px solid #2c40f1f5;
+    border-radius: 10px;
     margin: auto;
     margin-bottom: 10px;
     padding: 10px;
@@ -40,6 +53,14 @@ body {
     color: #007bff;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
+}
+
+article{
+    width: 90%;
+    border: 1px solid #2c40f1f5;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
 }
 
 .caja {
@@ -145,6 +166,7 @@ footer {
     text-align: center;
     box-shadow: 2px 2px 3px #999;
     z-index: 1000;
+    cursor: grab;
 }
 
 .whatsapp-float img {
@@ -155,6 +177,10 @@ footer {
 
 .whatsapp-float:hover {
     background-color: #128c7e;
+}
+
+.whatsapp-float:active {
+    cursor: grabbing;
 }
 
 @keyframes scroll {
